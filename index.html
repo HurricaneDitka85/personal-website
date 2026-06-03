@@ -146,7 +146,17 @@
   .expertise-card p { font-size: 0.88rem; line-height: 1.7; color: var(--muted); font-weight: 300; }
 
   .experience { background: var(--paper); }
-  .timeline { max-width: 720px; }
+  .experience-columns {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 4rem; max-width: 1100px;
+  }
+  .experience-col-label {
+    font-size: 0.68rem; font-weight: 500; letter-spacing: 0.25em;
+    text-transform: uppercase; color: var(--muted);
+    margin-bottom: 1.5rem; padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .timeline { max-width: none; }
   .timeline-item {
     display: grid; grid-template-columns: 140px 1fr;
     gap: 2rem; padding-bottom: 3rem; position: relative;
@@ -271,7 +281,7 @@
     <h1 class="hero-name">Sean M.<br><em>Hogan</em></h1>
     <p class="hero-title">COO &middot; CFO &middot; CPO</p>
     <p class="hero-bio">
-      I build the operational infrastructure that lets mission-driven organizations survive their hardest chapters and scale their best ones. With concurrent C-suite experience across operations, finance, and product -- and a background in organizational psychology -- I bring both the systems thinking and the human insight that lasting growth requires.
+      I build the operational infrastructure that lets mission-driven organizations survive their hardest chapters and scale their best ones. With concurrent C-suite experience across operations, finance, and product, and a background in organizational psychology, I bring both the systems thinking and the human insight that lasting growth requires.
     </p>
     <div class="hero-ctas">
       <a href="#contact" class="btn-primary">Get in Touch</a>
@@ -319,7 +329,7 @@
     <div class="expertise-card">
       <span class="expertise-icon">&#9670;</span>
       <h3>Mission Alignment</h3>
-      <p>Translating organizational purpose into operational strategy -- ensuring growth serves the mission, not the other way around.</p>
+      <p>Translating organizational purpose into operational strategy, ensuring growth serves the mission, not the other way around.</p>
     </div>
     <div class="expertise-card">
       <span class="expertise-icon">&#36;</span>
@@ -334,7 +344,7 @@
     <div class="expertise-card">
       <span class="expertise-icon">&#9632;</span>
       <h3>Product Operations</h3>
-      <p>Bridging product vision and operational execution -- from roadmap to delivery to the systems that keep product teams moving.</p>
+      <p>Bridging product vision and operational execution, from roadmap to delivery to the systems that keep product teams moving.</p>
     </div>
   </div>
 </section>
@@ -345,41 +355,78 @@
     <h2 class="section-title">Experience</h2>
     <div class="divider"></div>
   </div>
-  <div class="timeline reveal">
-    <div class="timeline-item">
-      <div class="timeline-year">Present</div>
-      <div class="timeline-dot"></div>
-      <div class="timeline-content">
-        <h3>COO / CFO / CPO</h3>
-        <div class="org">Alpha USA</div>
-        <p>Concurrent C-suite leadership across operations, finance, and product at a national faith-based organizational network. Led organizational turnaround and built scalable infrastructure for sustained mission impact.</p>
+  <div class="experience-columns reveal">
+    <div>
+      <p class="experience-col-label">Work</p>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-year">2024</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>CEO</h3>
+            <div class="org">AIUSA Inc</div>
+            <p>Fractional chief executive stewardship of AIUSA Inc, the organizational entity supporting the Alpha movement across the United States.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">Present</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>COO / CFO / CPO</h3>
+            <div class="org">Alpha USA</div>
+            <p>Concurrent C-suite leadership across operations, finance, and product at a national faith-based organizational network. Led organizational turnaround and built scalable infrastructure for sustained mission impact.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">Prior</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Senior Consultant</h3>
+            <div class="org">Microsoft</div>
+            <p>Delivered enterprise-scale consulting engagements focused on organizational transformation and operational strategy.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">Prior</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Consultant</h3>
+            <div class="org">Accenture</div>
+            <p>Built foundational consulting experience across complex, multi-stakeholder operational engagements.</p>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="timeline-item">
-      <div class="timeline-year">Prior</div>
-      <div class="timeline-dot"></div>
-      <div class="timeline-content">
-        <h3>Senior Consultant</h3>
-        <div class="org">Microsoft</div>
-        <p>Delivered enterprise-scale consulting engagements focused on organizational transformation and operational strategy.</p>
-      </div>
-    </div>
-    <div class="timeline-item">
-      <div class="timeline-year">Prior</div>
-      <div class="timeline-dot"></div>
-      <div class="timeline-content">
-        <h3>Consultant</h3>
-        <div class="org">Accenture</div>
-        <p>Built foundational consulting experience across complex, multi-stakeholder operational engagements.</p>
-      </div>
-    </div>
-    <div class="timeline-item">
-      <div class="timeline-year">Academic</div>
-      <div class="timeline-dot"></div>
-      <div class="timeline-content">
-        <h3>DBA Candidate</h3>
-        <div class="org">Durham University</div>
-        <p>Doctoral research at the intersection of leadership, organizational health, and human systems. MA in Counseling Psychology.</p>
+    <div>
+      <p class="experience-col-label">Education</p>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-year">In Progress</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>DBA Candidate</h3>
+            <div class="org">Durham University</div>
+            <p>Doctoral research at the intersection of leadership, organizational health, and human systems.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">Graduate</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>MA, Counseling Psychology</h3>
+            <div class="org">The Seattle School of Theology &amp; Psychology</div>
+            <p>Graduate study in counseling psychology, organizational dynamics, and the human dimensions of leadership.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">Undergrad</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>BS, Business Systems</h3>
+            <div class="org">Taylor University, Upland, Indiana</div>
+            <p></p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -395,7 +442,7 @@
     <div class="writing-card">
       <p class="writing-tag">Operations</p>
       <h3>Why Most Turnarounds Fail Before They Start</h3>
-      <p>The operational mistakes that doom organizational recovery efforts -- and the diagnostic framework I use instead.</p>
+      <p>The operational mistakes that doom organizational recovery efforts, and the diagnostic framework I use instead.</p>
     </div>
     <div class="writing-card">
       <p class="writing-tag">Leadership</p>
@@ -405,7 +452,7 @@
     <div class="writing-card">
       <p class="writing-tag">Culture</p>
       <h3>Building Teams That Don't Need You</h3>
-      <p>What clinical psychology taught me about organizational dependency -- and how to build cultures that outlast their founders.</p>
+      <p>What clinical psychology taught me about organizational dependency, and how to build cultures that outlast their founders.</p>
     </div>
     <div class="writing-card">
       <p class="writing-tag">Finance</p>
