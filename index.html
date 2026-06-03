@@ -95,17 +95,10 @@
     background: var(--accent);
     opacity: 0; animation: fadeIn 1.2s 0.8s forwards;
   }
-  .hero-photo-placeholder {
+  .hero-photo {
     position: absolute; inset: 0;
-    background: linear-gradient(160deg, #2d4a3e 0%, #1a2e26 60%, #0f1e19 100%);
-    display: flex; align-items: center; justify-content: center;
-  }
-  .initials-circle {
-    width: 160px; height: 160px; border-radius: 50%;
-    border: 2px solid rgba(200,184,154,0.4);
-    display: flex; align-items: center; justify-content: center;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 3.5rem; font-weight: 300; color: rgba(200,184,154,0.8);
+    width: 100%; height: 100%;
+    object-fit: cover; object-position: center top;
   }
   .hero-right-inner {
     position: absolute; inset: 0;
@@ -172,6 +165,7 @@
     width: 13px; height: 13px; border-radius: 50%;
     background: var(--accent); border: 2px solid var(--paper);
   }
+  .timeline-content { min-width: 0; }
   .timeline-content h3 {
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.2rem; font-weight: 600; color: var(--ink); margin-bottom: 0.2rem;
@@ -180,7 +174,7 @@
     font-size: 0.82rem; color: var(--accent); font-weight: 500;
     letter-spacing: 0.05em; margin-bottom: 0.6rem;
   }
-  .timeline-content p { font-size: 0.88rem; line-height: 1.7; color: var(--muted); font-weight: 300; }
+  .timeline-content p { font-size: 0.88rem; line-height: 1.7; color: var(--muted); font-weight: 300; overflow-wrap: break-word; }
 
   .writing { background: var(--accent); }
   .writing .section-label { color: var(--warm-mid); }
@@ -285,9 +279,7 @@
     </div>
   </div>
   <div class="hero-right">
-    <div class="hero-photo-placeholder">
-      <div class="initials-circle">SMH</div>
-    </div>
+    <img src="headshot.jpeg" alt="Sean M. Hogan" class="hero-photo">
     <div class="hero-right-inner">
       <div class="hero-stat-row">
         <div class="hero-stat">
