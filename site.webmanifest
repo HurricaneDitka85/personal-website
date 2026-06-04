@@ -1,0 +1,12 @@
+{
+  "name": "Sean M. Hogan",
+  "short_name": "S. Hogan",
+  "description": "Multi-role C-suite operator specializing in operational turnaround and scale.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5f2ec",
+  "theme_color": "#2d4a3e",
+  "icons": [
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
