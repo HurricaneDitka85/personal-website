@@ -353,9 +353,15 @@
   .writing .divider { background: var(--warm-mid); }
   .writing-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; max-width: 900px; }
   .writing-card {
+    position: relative;
     padding: 2rem; background: rgba(255,255,255,0.06);
     border: 1px solid rgba(200,184,154,0.2);
+    transition: background 0.3s, transform 0.3s;
   }
+  .writing-card:hover { background: rgba(255,255,255,0.12); transform: translateY(-3px); }
+  .writing-card h3 a { color: inherit; text-decoration: none; }
+  .writing-card h3 a::after { content: ''; position: absolute; inset: 0; }
+  .writing-card h3 a:focus-visible { outline: 2px solid var(--warm-mid); outline-offset: 4px; }
   .writing-tag {
     font-size: 0.68rem; font-weight: 500; letter-spacing: 0.15em;
     text-transform: uppercase; color: var(--warm-mid); margin-bottom: 0.75rem;
@@ -723,23 +729,23 @@
   </div>
   <div class="writing-grid reveal">
     <article class="writing-card">
-      <p class="writing-tag"><span>Operations</span><span class="writing-status">Coming soon</span></p>
-      <h3>Why Most Turnarounds Fail Before They Start</h3>
+      <p class="writing-tag"><span>Operations</span><span class="writing-status">Read &rarr;</span></p>
+      <h3><a href="/writing/why-most-turnarounds-fail-before-they-start/">Why Most Turnarounds Fail Before They Start</a></h3>
       <p>The operational mistakes that doom organizational recovery efforts, and the diagnostic framework I use instead.</p>
     </article>
     <article class="writing-card">
-      <p class="writing-tag"><span>Leadership</span><span class="writing-status">Coming soon</span></p>
-      <h3>The Hidden Cost of the Heroic Leader</h3>
+      <p class="writing-tag"><span>Leadership</span><span class="writing-status">Read &rarr;</span></p>
+      <h3><a href="/writing/hidden-cost-of-the-heroic-leader/">The Hidden Cost of the Heroic Leader</a></h3>
       <p>How over-reliance on a single leader creates the fragility that eventually breaks mission-driven organizations.</p>
     </article>
     <article class="writing-card">
-      <p class="writing-tag"><span>Culture</span><span class="writing-status">Coming soon</span></p>
-      <h3>Building Teams That Don't Need You</h3>
+      <p class="writing-tag"><span>Culture</span><span class="writing-status">Read &rarr;</span></p>
+      <h3><a href="/writing/building-teams-that-dont-need-you/">Building Teams That Don't Need You</a></h3>
       <p>What counseling psychology taught me about organizational dependency, and how to build cultures that outlast their founders.</p>
     </article>
     <article class="writing-card">
-      <p class="writing-tag"><span>Finance</span><span class="writing-status">Coming soon</span></p>
-      <h3>The CFO Mindset Every CEO Needs</h3>
+      <p class="writing-tag"><span>Finance</span><span class="writing-status">Read &rarr;</span></p>
+      <h3><a href="/writing/cfo-mindset-every-ceo-needs/">The CFO Mindset Every CEO Needs</a></h3>
       <p>Why leaders who don't think in financial terms eventually become the bottleneck they were hired to remove.</p>
     </article>
   </div>
